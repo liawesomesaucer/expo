@@ -1,18 +1,18 @@
 body {
   background: url('http://sdhacks.io/images/scripps.jpg') no-repeat fixed;
   background-size: cover;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .button {
   background-color: #fff;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 5px;
   text-decoration: none;
-  font-weight: 800;
+  text-transform: uppercase;
+  font-weight: 400;
   border-style: solid;
   border-width: 2px;
-  border-color: #062946;
+  border-color: #36648B;
 }
 
 .container {max-width: 800px; margin: 0 auto; overflow: auto;}
@@ -84,7 +84,8 @@ ul li {padding-bottom: 6px; line-height: 22px;}
 /* older css */
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-size: 16px;
 
   color: #062946;
@@ -127,7 +128,6 @@ input {
   width: 90%;
   font-size: 16px;
   padding: 8px;
-  font-family: sans-serif;
 }
 .search_container{
   background-color: #fff;
