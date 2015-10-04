@@ -1,3 +1,8 @@
+body {
+  background: url('http://sdhacks.io/images/scripps.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
 .container {max-width: 800px; margin: 0 auto; overflow: auto;}
 
 h3 {padding-top: 18px;}
@@ -12,11 +17,17 @@ table {
   border-spacing: 0; width: 100%;
   background-color: #FFF;
   border-collapse: collapse;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 tbody tr:nth-child(odd) {
   background-color: #F0F0F0;
+}
 
+tbody tr:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 th, td {
@@ -107,22 +118,32 @@ input {
   font-family: sans-serif;
 }
 .search_container{
+  background-color: #fff;
   text-align:center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 #header {
   width:800px;
-  background-color:#fff;
   color:#062946;
   z-index:999999;
   text-align:center;
+  margin-bottom: 10px;
 }
 
 #footer{
-  background-color: #fff;
-  color: #062946;
+  color: #fff;
   text-align: center;
   padding-bottom: 1rem;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer a:hover {
+  color: #26A4C5;
 }
 
 #hackathon {
