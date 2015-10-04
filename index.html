@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>SD Hacks Expo</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type='text/css' href='css/style.css'>
   <link rel="shortcut icon" href="http://sdhacks.io/images/favico.png">
   <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
@@ -22,6 +22,7 @@
           <img src="http://sdhacks.io/images/logo.png" style="vertical-align:middle; width:200px;">
         </a>
       </h1>
+      <a href="http://sdhacks.io/images/venue_map.png" target="_blank" class="button">View Map</a>
     </div>
     <div id="fullTable"></div>
   </div>
@@ -36,16 +37,14 @@
           <th class="number">Table</th>
           <th class="name">Project</th>
           <th class="prize">Sponsor Prizes</th>
-          <th class="cat">Category</th> <!--You can comment out this column if you don't need it-->
         </tr>
       </thead>
       <tbody class="list">
         {{#data}}
           <tr>
-            <td class="number">T{{table}}</td>
+            <td class="number">{{table}}</td>
             <td class="name"><a href="{{{link}}}" target="_blank">{{project}}</a></td>
             <td class="prize">{{sponsors}}</td>
-            <td class="cat">{{category}}</td> <!--You can comment out this column if you don't need it-->
           </tr>
         {{/data}}
       </tbody>

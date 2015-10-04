@@ -1,6 +1,18 @@
 body {
   background: url('http://sdhacks.io/images/scripps.jpg') no-repeat fixed;
   background-size: cover;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button {
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: 800;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #062946;
 }
 
 .container {max-width: 800px; margin: 0 auto; overflow: auto;}
