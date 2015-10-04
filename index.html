@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 
-<!--
-
-Run a find replace on:
-- DevpostURL -> Your Devpost URL: http://pennappsxii.devpost.com
-- HackathonName -> Your Hackathon Name -> PennApps XII
-
-You can also use your own favico or Hackathon logo/header.
-
--->
-
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>HackathonName Expo</title>
+  <title>SD Hacks Expo</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <link href='//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type='text/css' href='css/style.css'>
-  <link rel="shortcut icon" href="http://nealrs.github.io/devpost-follow-button/icon/devpost-128.png">
+  <link rel="shortcut icon" href="http://sdhacks.io/images/favico.png">
   <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
   <script type='text/javascript' src='js/papaparse.min.js'></script>
   <script type='text/javascript' src='js/mustache.min.js'></script>
@@ -28,8 +18,8 @@ You can also use your own favico or Hackathon logo/header.
   <div class="container">
     <div id="header">
       <h1>
-        <a href="DevpostURL" title="HackathonName Expo">
-          <img src="http://nealrs.github.io/devpost-follow-button/icon/devpost.svg" style="vertical-align:middle; width:60px;"> HackathonName
+        <a href="http://sdhacks.devpost.com" title="SD Hacks Expo">
+          <img src="http://sdhacks.io/images/logo.png" style="vertical-align:middle; width:60px;"> SD Hacks
         </a>
       <h1>
     </div>
@@ -52,7 +42,7 @@ You can also use your own favico or Hackathon logo/header.
       <tbody class="list">
         {{#data}}
           <tr>
-            <td class="number">E{{expo}} T{{table}}</td>
+            <td class="number">T{{table}}</td>
             <td class="name"><a href="{{{link}}}" target="_blank">{{project}}</a></td>
             <td class="prize">{{sponsors}}</td>
             <td class="cat">{{category}}</td> <!--You can comment out this column if you don't need it-->
