@@ -1,0 +1,267 @@
+body {
+  background: url('../img/background.png') no-repeat fixed;
+  background-size: cover;
+}
+
+.button {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #103B4D;
+}
+
+.sd-card {
+  box-shadow: 0 2px 22px rgba(12,42,51,.3);
+  border-radius: 10px;
+  border: 2px solid #aa8dc5;
+}
+
+.expo-logo {
+  vertical-align: middle;
+  width: 200px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h3 {padding-top: 18px;}
+h1 {
+  font-size: 36px;
+  padding-top: .5rem;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+table {
+  border-spacing: 0; width: 100%;
+  background-color: #FFF;
+  border-collapse: collapse;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+table a {
+  text-decoration: none;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #EDF4F7;
+}
+
+tbody tr:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+th.number,
+td.number {
+  width: 15%;
+  padding-left: 20px;
+}
+
+th.name,
+td.name {
+  width: 35%;
+}
+
+th.prize,
+td.prize {
+  width: 40%;
+  padding-right: 20px;
+}
+
+th.cat,
+td.cat {
+  width: 10%;
+}
+
+h1 a, #footer a{
+  border:none;
+  color: #103B4D;
+}
+
+td a {line-height: 24px;}
+tr {height: 50px;}
+ul, ol {text-indent: 0; margin: 0; padding-left: 20px;}
+ul li {padding-bottom: 6px; line-height: 22px;}
+
+.half {max-width: 50%; display: inline-block; vertical-align: top;}
+.half:nth-child(odd) {padding-left: 20px;}
+
+/* older css */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 16px;
+
+  color: #103B4D;
+  background-color:#fff;
+
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+
+img {width: 100%;}
+hr {border: 2px solid #CCF4FF;}
+
+p a, a {
+  color: #103B4D;
+  padding-bottom: 0px;
+  border-bottom: 2px #CCCCCC dotted;
+}
+a:hover {color: #36648B;}
+a:active {color: #36648B;}
+small {padding: 10px 0px;}
+p, ol {line-height: 1.4;}
+text {font-size: 12px;}
+
+body.index p:nth-of-type(2) {font-size: 30px;}
+body.index table {border: 4px solid #CCF4FF; padding: 18px;}
+.home-link {color: #47CCFC;}
+
+/* funsies */
+/*::selection {background: #44FFB4;}
+::-moz-selection {background: #44FFB4;}*/
+
+/* filter css */
+
+input {
+  border: 1px solid #ccc;
+  margin: 16px 0px;
+  width: 90%;
+  font-size: 16px;
+  padding: 8px;
+}
+.search_container{
+  background-color: #fff;
+  text-align:center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#header {
+  width:800px;
+  color:#103B4D;
+  z-index:999999;
+  text-align:center;
+  margin-bottom: 10px;
+}
+
+#footer{
+  color: #103B4D;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#footer a {
+  color: #103B4D;
+}
+
+#footer a:hover {
+  color: #26A4C5;
+}
+
+#hackathon {
+  margin: 30px 0 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  #header {
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+    margin-left: 8px;
+  }
+
+  th.number,
+  td.number {
+    width: 20%;
+  }
+
+  th.name,
+  td.name {
+    width: 30%;
+  }
+
+  th.prize,
+  td.prize {
+    width: 50%;
+  }
+
+  th.cat,
+  td.cat {
+    display:none;
+  }
+
+  #hackathon {
+    margin: 30px 0 10px 8px;
+  }
+
+  #footer p{
+    text-align:left;
+    padding:0 10px;
+  }
+}
+
+@media print {
+  body {
+    color: black !important;
+    background: #FFF;
+  }
+
+  a {
+    color: black !important;
+  }
+
+  #header, #footer {
+    background-color:#fff;
+    color: black;
+  }
+  .search_container{
+    background-color:#fff;
+  }
+
+  th.cat,
+  td.cat {
+    display:none;
+  }
+
+  tr {
+    page-break-inside:avoid;
+    page-break-after:auto;
+  }
+
+  tbody tr{
+    background-color: #fff !important;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
